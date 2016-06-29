@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/zingchart.min.js"></script>
+  <script src="js/calc.js"></script>
+  <style>
+    div {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <div id ='moneyInRound'></div>
+  <div id ='hitsInRound'></div>
+  <div id ='investmentInRound'></div>
+
+  <script>
+    $(document).ready(function() {
+      init();
+      calc();
+      renderMoneyInRound();
+      renderHitsInRound();
+      renderInvestmentInRound();
+      //printWinRatio();
+      /*
+      setInterval(function() {
+        init();
+        calc();
+        renderMoneyInRound();
+        renderHitsInRound();
+        renderInvestmentInRound();
+        //printWinRatio();
+      }, 5000);
+      */
+    });
+  </script>
+</body>
+</html>
